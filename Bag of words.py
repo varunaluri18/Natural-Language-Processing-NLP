@@ -1,3 +1,11 @@
+#Lower the Sentences
+#Tokenization
+#Histogram
+#Sort the histogram
+#Filter Words
+#Creating the matrix(Bag of words)
+
+
 import nltk
 
 paragraph =  """I have three visions for India. In 3000 years of our history, people from all over 
