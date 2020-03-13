@@ -15,7 +15,8 @@ for i in range(0,len(messages)):
 	review = review.lower()
 	review = review.split()
 	
-	review = [ps.stem(word) for word in review if word not in stopwords.set(stopwords.words('english'))]
+	#review = [ps.stem(word) for word in review if word not in stopwords.set(stopwords.words('english'))]
+	review = [ps.stem(word) for word in review if not word in stopwords.words('english')]
 	review = ' '.join(review)
 	corpus.append(review)
 
