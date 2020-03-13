@@ -33,7 +33,7 @@ from sklearn.model_selection import train_test_selection
 X_train, X_test, y_train, y_test = train_terst_split(X,y, test_size=0.20, random_state=0)
 
 #Train the model using bt Navie Bayes Classifier
-from sklearn.naive-bayes import MultinominalNB
+from sklearn.naive_bayes import MultinominalNB
 spam_detect_model = MultinominalNB.fit(X_train, y_train)
 
 y_pred=spam_detect_model.predict(X_test)
@@ -41,5 +41,5 @@ y_pred=spam_detect_model.predict(X_test)
 from sklearn.mtrics import confusion_matrix
 cm = confusion_matrix(y_test,y_pred)
 
-from sklearn.metrics import accuracy-score
+from sklearn.metrics import accuracy_score
 ac = accuracy_score(y_test,y_pred)
