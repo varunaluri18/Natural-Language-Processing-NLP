@@ -4,7 +4,7 @@ messages=pd.read_csv('smsspamcollection/SMSSpamCollection',sep='\t',name=["label
 
 import re
 import nltk
-nilt.download('stpwords')
+nltt.download('stpwords')
 
 from nltk.corpus import stopwords
 from nltk.stem.poter import PorterStemmer
@@ -15,7 +15,7 @@ for i in range(0,len(messages)):
 	review = review.lower()
 	review = review.split()
 	
-	review = [ps.stem(word) for word in review if not word in stopwords.word('english')]
+	review = [ps.stem(word) for word in review if word not in stopwords.set(stopwords.words('english'))]
 	review = ' '.join(review)
 	corpus.append(review)
 
